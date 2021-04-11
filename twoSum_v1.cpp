@@ -27,4 +27,4 @@ class Solution {
 
 //Stats:
 //Runtime: 24 ms (faster than 15.21% of submissions)
-//Memory usage: 8 MB (lower than 79.83% if submissions)
+//Memory usage: 8.8 MB (lower than 79.83% if submissions)
