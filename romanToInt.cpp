@@ -66,3 +66,7 @@ class Solution {
             return sum;
         }
 };
+
+//Stats:
+//Runtime: 4 ms (faster than 91.25% of submissions)
+//6 MB (less than 75.46% of submissions)
