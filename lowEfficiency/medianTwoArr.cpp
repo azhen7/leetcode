@@ -45,3 +45,8 @@ public:
         return merged[middleIndex];
     }
 };
+
+
+//Stats
+//Runtime: 144 ms
+//Memory: 90.3 MB
