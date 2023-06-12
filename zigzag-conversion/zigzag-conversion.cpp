@@ -11,7 +11,7 @@ std::string convert(std::string s, int numRows) {
         for (int j = i; j < len; j += 2 * (numRows - 1))
         {
             converted += s[j];
-            int newIndex = j +  (numRows - 1 - i) * 2;
+            int newIndex = j + (numRows - 1 - i) * 2;
             if (i > 0 && newIndex < len && newIndex != j)
             {
                 converted += s[newIndex];
