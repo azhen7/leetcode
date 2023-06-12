@@ -1,6 +1,6 @@
 # Rotate Image
 
-The idea of this solution is solve a 90 degree clockwise rotation from the outer layer, and iteratively work inwards.
+The idea of this solution is perform a 90 degree clockwise rotation on the outer layer, and iteratively work inwards.
 This is implemented as follows:
 
 Given a 2D matrix
@@ -10,9 +10,9 @@ e f g h
 i j k l
 m n o p
 ```
-We can `a`, `d`, `p`, and `m`. After performing a series of swaps with `a`, `d`, `p`, and `m`, we can succesfully perform a
+We can take `a`, `d`, `p`, and `m`. After performing a series of swaps with `a`, `d`, `p`, and `m`, we can succesfully perform a
 90 degree rotation on those 4 points. Then, we move right, taking `b`, `h`, `o`, and `i`, and "rotating" them. We continue
-until the entire outer layer has been swapped.
+until the entire outer layer has been rotated.
 
 Then, we move inwards (taking `f`, `g`, `k`, and `j`, in this case), and repeat the above process.
 
