@@ -25,7 +25,7 @@ A_k                    A_(3k-1)
 
 Corresponding characters from Chunk 1 to Chunk 2 are separated by an offset of `2k-2`. The same goes for Chunk 2 to Chunk 3, and so on.
 
-For each chunk `n`, let `p` be any number in the range `(2nk-2k-2n+3, 2nk-k-2n+2)`. `A_p` has a "mirroring" character `A_(2k-p+4(nk-k-n+1))`.
+For each chunk `n`, let `p` be any number in the range `(2nk-2k-2n+3, 2nk-k-2n+2)`. `A_p` has a "mirroring" character `A_(4(nk-n+1)-2k-p)`.
 
 With this information, we are able to construct the result as follows:
 * Add `A_1`, `A_(2k-1)`, etc.
