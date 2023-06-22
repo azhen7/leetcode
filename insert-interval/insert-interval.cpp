@@ -9,6 +9,10 @@ std::vector<std::vector<int>> insert(std::vector<std::vector<int>>& intervals, s
         if (newInterval[0] <= intervals[i][1] && indexOfStartOfInsert == -10)
         {
             indexOfStartOfInsert = i;
+            /**
+             * If start of range-to-be-inserted falls between the start and end
+             * of the previous range.
+            */
             if (newInterval[0] < intervals[i][0]
                 && (i > 0 && newInterval[0] < intervals[i - 1][1] || i == 0))
             {
@@ -18,6 +22,10 @@ std::vector<std::vector<int>> insert(std::vector<std::vector<int>>& intervals, s
         if (newInterval[1] <= intervals[i][1] && indexOfEndOfInsert == -10)
         {
             indexOfEndOfInsert = i;
+            /**
+             * If end of range-to-be-inserted doesn't actually reach the current range,
+             * the range-to-be-inserted must be inserted somewhere around the previous range. 
+            */
             if (newInterval[1] < intervals[i][0])
             {
                 indexOfEndOfInsert--;
