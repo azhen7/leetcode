@@ -19,3 +19,7 @@ public:
         return v[n];
     }
 };
+
+int main()
+{
+}
